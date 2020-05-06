@@ -11,7 +11,7 @@
     <?php endif; ?>
 
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
-    <section class="widget">
+    <section class="widget" style="font-size:14px">
 		<h3 class="widget-title"><?php _e('最近回复'); ?></h3>
         <ul class="widget-list">
         <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
