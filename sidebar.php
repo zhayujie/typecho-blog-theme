@@ -10,17 +10,7 @@
     </section>
     <?php endif; ?>
 
-    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
-    <section class="widget" style="font-size:14px">
-		<h3 class="widget-title"><?php _e('最近回复'); ?></h3>
-        <ul class="widget-list">
-        <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
-        <?php while($comments->next()): ?>
-            <li><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(35, '...'); ?></li>
-        <?php endwhile; ?>
-        </ul>
-    </section>
-    <?php endif; ?>
+    
 
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowCategory', $this->options->sidebarBlock)): ?>
     <section class="widget">
@@ -44,15 +34,27 @@
 		<h3 class="widget-title"><?php _e('其它'); ?></h3>
         <ul class="widget-list">
             <?php if($this->user->hasLogin()): ?>
-				<!-- <li class="last"><a href="<?php $this->options->adminUrl(); ?>"><?php _e('进入后台'); ?> (<?php $this->user->screenName(); ?>)</a></li> -->
                 <li><a href="<?php $this->options->logoutUrl(); ?>"><?php _e('退出'); ?></a></li>
             <?php else: ?>
-                <!-- <li class="last"><a href="<?php $this->options->adminUrl('login.php'); ?>"><?php _e('登录'); ?></a></li> -->
             <?php endif; ?>
             <li><a href="<?php $this->options->feedUrl(); ?>"><?php _e('文章 RSS'); ?></a></li>
             <li><a href="<?php $this->options->commentsFeedUrl(); ?>"><?php _e('评论 RSS'); ?></a></li>
         </ul>
 	</section>
     <?php endif; ?>
+    
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentComments', $this->options->sidebarBlock)): ?>
+    <section class="widget" style="font-size:14px">
+		<h3 class="widget-title"><?php _e('最近回复'); ?></h3>
+        <ul class="widget-list">
+        <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
+        <?php while($comments->next()): ?>
+            <li><a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(31, '...'); ?></li>
+        <?php endwhile; ?>
+        </ul>
+    </section>
+    <?php endif; ?>
+
+    
 
 </div><!-- end #sidebar -->

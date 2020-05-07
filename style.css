@@ -118,7 +118,8 @@ textarea {
 }
 #search {
 	position:relative;
-	margin-top:15px;
+    margin-top:15px;
+    margin-right: 38px;
 }
 #search input {
     padding-right:30px;
@@ -284,11 +285,11 @@ textarea {
 #secondary {
     padding-top:15px;
     padding-left: 1.5%;
-    padding-right: 2.8%;
+    padding-right: 5.7%;
 	word-wrap:break-word;
 }
 .widget {
-	margin-bottom:30px;
+	margin-bottom:42px;
 }
 .widget-list {
 	list-style:none;
@@ -407,4 +408,7 @@ img.alignright {
 }
 .title-color {
     color: #585858;
+}
+.widget-title {
+    margin-block-end: .90em;
 }
