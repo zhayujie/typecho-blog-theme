@@ -182,6 +182,14 @@ textarea {
 .post-near li {
 	margin:10px 0;
 }
+.post-info {
+    overflow:hidden;
+    margin-top: 35px;
+    padding:25px 20px 15px 0px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    border-top: 1px solid #EEE;
+}
 .archive-title {
 	margin:1em 0 -1em;
 	padding-top:20px;
@@ -222,7 +230,7 @@ textarea {
 	background:#EEE;
 }
 #comments {
-	padding-top:15px;
+	padding-top:30px;
 }
 .comment-list,.comment-list ol {
 	list-style:none;
