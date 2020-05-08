@@ -14,9 +14,12 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 
     <!-- 使用url函数转换相关路径 -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/normalize/2.1.3/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/normalize.min.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/grid.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
+    <!-- highlight高亮配色 -->
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/xcode.min.css'); ?>">
+
 
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
@@ -47,7 +50,7 @@
                 <p class="description"><?php $this->options->description() ?></p>
             </div>    
             </div>
-            <div class="site-search col-3 kit-hidden-tb">
+            <div class="col-3 kit-hidden-tb">
                 <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
                     <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
                     <input type="text" id="s" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
