@@ -373,6 +373,9 @@ img.alignright {
     .post {
         padding:10px 7.5px 10px 7.5px;
     }
+    .directory-content {
+        display:none
+    }
 }
 
 @media(max-width:768px) {
@@ -418,5 +421,75 @@ img.alignright {
     color: #585858;
 }
 .widget-title {
-    margin-block-end: .90em;
+    margin-block-end: 16px;
+}
+
+.directory-content {
+    /* position:relative; */
+    z-index:0;
+    max-width:320px;
+}
+
+#directory {
+    z-index:0;
+    display:inline-block;
+    text-align:left;
+}
+#directory li,#directory ul {
+    margin:0;
+    padding-left:0;
+    list-style:none
+}
+#directory>ul {
+    position:relative;
+    border-left:1px solid #ddd
+}
+#directory>ul>li::before {
+    position:relative;
+    top:0;
+    left:-3px;
+    display:inline-block;
+    width:6px;
+    height:6px;
+    content:'';
+    border-radius:50%;
+    /* background-color: #EB5055; */
+    background-color: #00a4ff;
+}
+/* 
+#directory>ul>li>a {
+    word-wrap: break-word;
+} */
+
+/* 一级目录 */
+#directory ul li a {
+    line-height: 1.6;
+    border-bottom: 0px;
+    font-weight: 450;
+    display:inline-table;
+    margin: 3px 0 3px 8px;
+    /* white-space:nowrap; */
+    color: #444444;
+    white-space: nowrap;
+}
+/* 二级目录 */
+#directory ul li ul li a {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 0 0 25px;
+    color: #5a5959;
+}
+/* 三级目录 */
+#directory ul li ul li ul li a {
+    margin-left:35px;
+    color: #666666;
+}
+
+#directory a:hover {
+    color:#00a4ff
+}
+
+.post-bar {
+    /* position: fixed;
+    top: 20px; */
 }

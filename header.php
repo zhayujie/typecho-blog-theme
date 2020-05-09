@@ -15,8 +15,8 @@
 
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/normalize.min.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/grid.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <!-- highlight高亮配色 -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/xcode.min.css'); ?>">
 

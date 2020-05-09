@@ -9,12 +9,12 @@
             <li><?php _e('时间: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
             <li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
         </ul>
-        <div class="post-content" itemprop="articleBody">
+        <div id="post-content" class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
         <p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
         <div class="post-info">
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>        <div style="margin-top:8px;">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="<?php $this->options->themeUrl('img/cc.png'); ?>" /></a>        <div style="margin-top:8px;">
                 本作品由<a href="<?php $this->options->siteUrl(); ?>"> zhayujie </a>创作，采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> 知识共享署名 4.0 国际许可协议 </a>进行许可，转载请务必署名。
             <div>
 		</div>
@@ -27,7 +27,6 @@
         <li>下一篇: <?php $this->theNext('%s','没有了'); ?></li>
     </ul>
 </div><!-- end #main-->
-
-<?php $this->need('sidebar.php'); ?>
+<?php $this->need('post-sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
 
