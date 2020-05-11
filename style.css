@@ -424,12 +424,14 @@ img.alignright {
     margin-block-end: 16px;
 }
 
+/*
+ * 侧边栏目录样式
+ */
 .directory-content {
     /* position:relative; */
     z-index:0;
     max-width:320px;
 }
-
 #directory {
     z-index:0;
     display:inline-block;
@@ -456,11 +458,6 @@ img.alignright {
     /* background-color: #EB5055; */
     background-color: #00a4ff;
 }
-/* 
-#directory>ul>li>a {
-    word-wrap: break-word;
-} */
-
 /* 一级目录 */
 #directory ul li a {
     line-height: 1.6;
@@ -484,12 +481,12 @@ img.alignright {
     margin-left:35px;
     color: #666666;
 }
-
 #directory a:hover {
     color:#00a4ff
 }
-
-.post-bar {
-    /* position: fixed;
-    top: 20px; */
+#widget-directory {
+    display: none;
+}
+.dir-check {
+    color:#00a4ff !important;
 }
