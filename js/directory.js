@@ -79,7 +79,9 @@ var postDirectoryBuild = function() {
             } else if (level < 0) {
                 level *= 2;
                 while (level++) {
-                    currentList = currentList.parentNode;
+                    if (currentList && currentList.parentNode) {
+                        currentList = currentList.parentNode;
+                    }
                 }
             }
             li = document.createElement('li');
