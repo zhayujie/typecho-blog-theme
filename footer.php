@@ -11,15 +11,14 @@
 </footer><!-- end #footer -->
 <?php $this->footer(); ?>
 
-<script src="<?php $this->options->themeUrl('js/highlight.min.js'); ?>"></script>
-<script type="text/javascript">
-    // 关闭自动语言检测
-    hljs.configure({languages: []});
-    // 渲染highlight代码块
-    hljs.initHighlightingOnLoad();
-</script>
-
 <?php if ($this->is('post')): ?>
+    <script src="<?php $this->options->themeUrl('js/highlight.min.js'); ?>"></script>
+    <script type="text/javascript">
+        // 关闭自动语言检测
+        hljs.configure({languages: []});
+        // 渲染highlight代码块
+        hljs.initHighlightingOnLoad();
+    </script>
     <script src="<?php $this->options->themeUrl('js/directory.js'); ?>"></script>
 <?php endif; ?>
 

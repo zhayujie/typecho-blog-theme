@@ -376,6 +376,12 @@ img.alignright {
     .directory-content {
         display:none
     }
+    .post-meta li {
+        margin-top:8px;
+    }
+    .post-title {
+        margin-bottom:.55em
+    }
 }
 
 @media(max-width:768px) {
