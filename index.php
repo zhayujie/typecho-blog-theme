@@ -14,6 +14,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 <div class="col-mb-12 col-8" id="main" role="main">
     <?php while($this->next()): ?>
+        <?php if($this->category != "essay"): ?>
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 			<h2 class="post-title" itemprop="name headline"><a class="title-color" itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
 			<ul class="post-meta">
@@ -27,6 +28,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
     			<?php $this->content('- 阅读剩余部分 -'); ?>
             </div>
         </article>
+        <?php endif; ?>
 	<?php endwhile; ?>
 
     <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
