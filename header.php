@@ -3,7 +3,7 @@
 <html class="no-js">
 
 <script>
-// baidu统计
+// 接入baidu统计
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -53,7 +53,7 @@ var _hmt = _hmt || [];
             <?php if ($this->options->logoUrl): ?>
                 <div class="logo-div logo-img-div">
                     <a id="logo" href="<?php $this->options->siteUrl(); ?>">
-                        <img src="<?php $this->options->logoUrl() ?>" alt=""/>
+                        <img src="<?php $this->options->logoUrl() ?>" width="64" height="64" alt=""/>
                     </a>
                 </div>
             <?php endif; ?>
@@ -72,7 +72,6 @@ var _hmt = _hmt || [];
             <div class="col-mb-12">
                 <nav id="nav-menu" class="clearfix" role="navigation">
                     <a<?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
-                    <!-- <a href="<?php $this->options->siteUrl(); ?>"><?php _e('随笔'); ?></a> -->
                     <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
                     <?php while($pages->next()): ?>
                     <a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
