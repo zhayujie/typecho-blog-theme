@@ -363,7 +363,7 @@ img.alignright {
 }
 @media(max-width:767px) {
 	body {
-	font-size:81.25%;
+	font-size:14px;
     }
     #nav-menu a {
         float:none;
