@@ -23,15 +23,12 @@ var _hmt = _hmt || [];
             'search'    =>  _t('包含关键字 %s 的文章'),
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
-        ), '', ' - '); ?><?php $this->options->title(); ?></title>
+        ), '', ' - '); ?>zyj的博客</title>
 
-    <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/normalize.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-    <!-- highlight高亮配色 -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/xcode.min.css'); ?>">
-
 
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
@@ -59,7 +56,7 @@ var _hmt = _hmt || [];
             <?php endif; ?>
             <div class="logo-div">
                 <a id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
-                <p class="description"><?php $this->options->description() ?></p>
+                <p class="description">Chancellor on brink of second bailout for banks.</p>
             </div>    
             </div>
             <div class="col-3 kit-hidden-tb">
@@ -85,6 +82,3 @@ var _hmt = _hmt || [];
 <div id="body">
     <div class="container">
         <div class="row">
-
-    
-    
