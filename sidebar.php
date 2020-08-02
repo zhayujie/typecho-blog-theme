@@ -7,15 +7,6 @@
 	</section>
     <?php endif; ?>
 
-    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowArchive', $this->options->sidebarBlock)): ?>
-    <section class="widget">
-		<h3 class="widget-title"><?php _e('归档'); ?></h3>
-        <ul class="widget-list">
-            <?php $this->widget('Widget_Contents_Post_Date', 'type=month&format=Y年m月')
-            ->parse('<li><a href="{permalink}">{date}</a></li>'); ?>
-        </ul>
-	</section>
-    <?php endif; ?>
 
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowOther', $this->options->sidebarBlock)): ?>
 	<section class="widget">
@@ -51,6 +42,16 @@
             ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
         </ul>
     </section>
+    <?php endif; ?>
+
+    <?php if (!empty($this->options->sidebarBlock) && in_array('ShowArchive', $this->options->sidebarBlock)): ?>
+    <section class="widget">
+		<h3 class="widget-title"><?php _e('归档'); ?></h3>
+        <ul class="widget-list">
+            <?php $this->widget('Widget_Contents_Post_Date', 'type=month&format=Y年m月')
+            ->parse('<li><a href="{permalink}">{date}</a></li>'); ?>
+        </ul>
+	</section>
     <?php endif; ?>
 
 </div><!-- end #sidebar -->
