@@ -129,7 +129,7 @@ if (titleSize > 0) {
         // 滚动时改变右侧目录样式，scroll位置在两个title之间时表示当前处于第一个title下
         for (i = 0; i < titleId.length; i++) {
             titleOffset = document.getElementById(titleId[i]).offsetTop;
-            if (pos + SWITCH_OFFSET < titleOffset) {
+            if (pos + SWITCH_OFFSET + 3 < titleOffset) {
                 break;
             }
         }
