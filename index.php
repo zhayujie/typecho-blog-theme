@@ -2,7 +2,7 @@
 /**
  * 基于默认主题自定义开发的版本
  * 
- * @package 自定义开发主题
+ * @package Typecho极简主体
  * @author zhayujie
  * @version 2.0
  * @link https://zhayujie.com

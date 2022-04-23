@@ -13,11 +13,6 @@
             <?php $this->content(); ?>
         </div>
         <?php if(  count($this->tags) > 0 ): ?><p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p><?php endif; ?>
-        <div class="post-info">
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="<?php $this->options->themeUrl('img/cc.png'); ?>" /></a>        <div style="margin-top:8px;">
-                本作品由<a href="<?php $this->options->siteUrl(); ?>"> zhayujie </a>创作，采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> 知识共享署名 4.0 国际许可协议 </a>进行许可，转载请务必署名。
-            <div>
-		</div>
     </article>
 
     <?php $this->need('comments.php'); ?>
